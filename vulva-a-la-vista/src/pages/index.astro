@@ -1,7 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout>
+<BaseLayout
+  title="Vulvástica — Educación menstrual con juego, talleres y materiales"
+  description="Vulvástica es un proyecto de educación menstrual de María Cantón: talleres, eventos, materiales digitales y el juego de mesa Vulva a la Vista."
+>
 
 <nav>
   <div class="nav-brand">
@@ -9,12 +12,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <span class="brand">Vulvástica</span>
   </div>
   <ul class="nav-links">
-    <li><a href="#juego">El juego</a></li>
-    <li><a href="#contenido">Qué incluye</a></li>
-    <li><a href="#creadora">Creadora</a></li>
-    <li><a href="#instructivo">Instructivo</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#eventos">Eventos</a></li>
+    <li><a href="#tienda">Tienda</a></li>
+    <li><a href="#creadora">Sobre mí</a></li>
   </ul>
-  <a href="#comprar" class="nav-cta">Comprar · $800 MXN</a>
+  <a href="#tienda" class="nav-cta">Ir a la tienda</a>
 </nav>
 
 <header class="hero">
@@ -22,66 +25,194 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <div class="glow-blob b2"></div>
   <div class="hero-content">
     <img class="hero-logo" src="/logo.jpg" alt="Logo Vulvástica" />
-    <div class="hero-kicker">Vulvástica presenta</div>
-    <h1>Vulva a la <span>Vista</span></h1>
-    <p class="sub">El juego de mesa didáctico que hace de la educación menstrual una conversación divertida, clara y sin tabúes.</p>
+    <div class="hero-kicker">Educación menstrual sin tabúes</div>
+    <h1>Bienvenidx a <span>Vulvástica</span></h1>
+    <p class="sub">Talleres, eventos y materiales creados por María Cantón para hablar del ciclo menstrual y el cuerpo con información clara, cercana y divertida.</p>
     <div class="hero-actions">
-      <a href="#comprar" class="btn btn-primary">Comprar ahora</a>
-      <a href="#instructivo" class="btn btn-secondary">Ver instructivo</a>
+      <a href="#servicios" class="btn btn-primary">Conoce los servicios</a>
+      <a href="#tienda" class="btn btn-secondary">Ver la tienda</a>
     </div>
   </div>
 </header>
 <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="#FFF6FB" d="M0,32 C240,70 480,0 720,20 C960,40 1200,70 1440,30 L1440,70 L0,70 Z"></path></svg>
 
-<section id="juego">
-  <div class="eyebrow">El juego</div>
+<section id="sobre">
+  <div class="eyebrow">El proyecto</div>
   <div class="about-grid">
     <div>
-      <h2>Aprender del cuerpo, sin pena y sin vueltas</h2>
-      <p><strong>Vulva a la Vista</strong> es un juego de mesa didáctico enfocado en educación menstrual: preguntas, retos y dinámicas que ayudan a entender el ciclo, la anatomía y los mitos alrededor de la menstruación de una forma clara, cercana y entretenida.</p>
-      <p>Pensado para jugarse en casa, en el salón de clases o en talleres de educación sexual, abre una conversación que muchas veces cuesta empezar — y la vuelve ligera, sin dejar de ser precisa.</p>
+      <h2>Educación menstrual, un espacio a la vez</h2>
+      <p><strong>Vulvástica</strong> es el proyecto de educación sexual de María Cantón, enfocado en llevar información clara sobre el ciclo menstrual y el cuerpo a espacios cotidianos: casas, escuelas, talleres y consultorios.</p>
+      <p>A través de talleres, materiales descargables y el juego de mesa <strong>Vulva a la Vista</strong>, Vulvástica busca abrir una conversación que muchas veces cuesta empezar — y volverla ligera, sin dejar de ser precisa.</p>
       <div class="placeholder">
         <span class="placeholder-tag">Completar</span>
-        <p style="font-size:0.88rem;color:#6B5480;">Aquí va la descripción final del juego: mecánica, edad recomendada, número de jugadores y duración de una partida.</p>
+        <p style="font-size:0.88rem;color:#6B5480;">Espacio para ampliar la misión/historia del proyecto Vulvástica.</p>
       </div>
     </div>
     <div class="img-placeholder">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
-      Foto del tablero / caja del juego
+      Foto del proyecto / talleres
     </div>
   </div>
 </section>
 
-<section id="contenido">
-  <div class="eyebrow">Qué incluye la caja</div>
-  <h2>Contenido del juego</h2>
-  <div class="contents-grid">
-    <div class="content-card">
-      <div class="icon">🎲</div>
-      <h3>[Componente 1]</h3>
-      <p>Descripción breve de la pieza y para qué sirve dentro del juego.</p>
+<section id="servicios">
+  <div class="eyebrow">Qué ofrece Vulvástica</div>
+  <h2>Servicios</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon">🎓</div>
+      <h3>[Nombre del servicio 1]</h3>
+      <p>Descripción breve: en qué consiste, a quién va dirigido (ej. escuelas, familias, adultxs) y modalidad (presencial/en línea).</p>
+      <div class="placeholder">
+        <span class="placeholder-tag">Completar</span>
+        <p>Detalles y precio de este servicio.</p>
+      </div>
     </div>
-    <div class="content-card">
-      <div class="icon">🃏</div>
-      <h3>[Componente 2]</h3>
-      <p>Descripción breve de la pieza y para qué sirve dentro del juego.</p>
+    <div class="service-card">
+      <div class="icon">🗣️</div>
+      <h3>[Nombre del servicio 2]</h3>
+      <p>Descripción breve: en qué consiste, a quién va dirigido y modalidad.</p>
+      <div class="placeholder">
+        <span class="placeholder-tag">Completar</span>
+        <p>Detalles y precio de este servicio.</p>
+      </div>
     </div>
-    <div class="content-card">
-      <div class="icon">📋</div>
-      <h3>[Componente 3]</h3>
-      <p>Descripción breve de la pieza y para qué sirve dentro del juego.</p>
+    <div class="service-card">
+      <div class="icon">🧡</div>
+      <h3>[Nombre del servicio 3]</h3>
+      <p>Descripción breve: en qué consiste, a quién va dirigido y modalidad.</p>
+      <div class="placeholder">
+        <span class="placeholder-tag">Completar</span>
+        <p>Detalles y precio de este servicio.</p>
+      </div>
     </div>
-    <div class="content-card">
-      <div class="icon">📖</div>
-      <h3>Instructivo</h3>
-      <p>Guía paso a paso para armar y jugar cada partida.</p>
+  </div>
+</section>
+
+<section id="eventos">
+  <div class="eyebrow">Agenda</div>
+  <h2>Talleres y eventos</h2>
+  <div class="placeholder" style="margin-bottom:0;">
+    <span class="placeholder-tag">Completar</span>
+    <p style="font-size:0.88rem;color:#6B5480;">Agrega aquí tus talleres y eventos reales: título, fecha, lugar (o "en línea") y una línea de descripción. Puedes tener tantas tarjetas como necesites en cada columna.</p>
+  </div>
+  <div class="events-columns">
+    <div class="events-col">
+      <h3>🌱 Próximos</h3>
+      <div class="event-card">
+        <span class="event-date">[Fecha]</span>
+        <h4>[Nombre del taller/evento]</h4>
+        <p>[Lugar o modalidad] — breve descripción de qué trata.</p>
+      </div>
+      <div class="event-card">
+        <span class="event-date">[Fecha]</span>
+        <h4>[Nombre del taller/evento]</h4>
+        <p>[Lugar o modalidad] — breve descripción de qué trata.</p>
+      </div>
     </div>
+    <div class="events-col">
+      <h3>📚 Pasados</h3>
+      <div class="event-card past">
+        <span class="event-date">[Fecha]</span>
+        <h4>[Nombre del taller/evento]</h4>
+        <p>[Lugar o modalidad] — breve descripción de qué trata.</p>
+      </div>
+      <div class="event-card past">
+        <span class="event-date">[Fecha]</span>
+        <h4>[Nombre del taller/evento]</h4>
+        <p>[Lugar o modalidad] — breve descripción de qué trata.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tienda">
+  <div class="eyebrow">Tienda Vulvástica</div>
+  <h2>Materiales y juego</h2>
+  <div class="store-grid">
+
+    <div class="product-card">
+      <div class="product-image">
+        <span class="product-badge fisico">Físico</span>
+        🎲
+      </div>
+      <div class="product-body">
+        <h3>Vulva a la Vista</h3>
+        <p>El juego de mesa didáctico de educación menstrual. Envío a domicilio en todo México.</p>
+        <div class="product-footer">
+          <span class="product-price">$800 MXN</span>
+          <a href="#" class="product-buy">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <span class="product-badge">Digital</span>
+        📖
+      </div>
+      <div class="product-body">
+        <h3>[Fanzine — nombre]</h3>
+        <p>Descripción breve del fanzine: tema y para quién es.</p>
+        <div class="product-footer">
+          <span class="product-price">[Precio]</span>
+          <a href="#" class="product-buy">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <span class="product-badge">Digital</span>
+        📘
+      </div>
+      <div class="product-body">
+        <h3>[Manual/Guía — nombre]</h3>
+        <p>Descripción breve del manual o guía: tema y para quién es.</p>
+        <div class="product-footer">
+          <span class="product-price">[Precio]</span>
+          <a href="#" class="product-buy">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <span class="product-badge">Digital</span>
+        🧸
+      </div>
+      <div class="product-body">
+        <h3>[Cuento infantil — nombre]</h3>
+        <p>Cuento para acompañar a niñas y niños en el tema de la menstruación.</p>
+        <div class="product-footer">
+          <span class="product-price">[Precio]</span>
+          <a href="#" class="product-buy">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="placeholder">
+      <span class="placeholder-tag">Pendiente</span>
+      <p style="margin:0;">Cada tarjeta de producto necesita: nombre real, descripción, precio y su propio Payment Link de Stripe en el <code>href</code> del botón "Comprar". Duplica una tarjeta <code>.product-card</code> por cada material nuevo que agregues (fanzines, manuales, cuentos, etc.).</p>
+    </div>
+  </div>
+</section>
+
+<section id="instructivo">
+  <div class="eyebrow">Cómo se juega</div>
+  <h2>Instructivo de Vulva a la Vista</h2>
+  <div class="instructivo-card">
+    <div>
+      <h3>Descarga el instructivo completo</h3>
+      <p>Reglas, montaje y dinámicas de juego explicadas paso a paso.</p>
+    </div>
+    <a href="#" class="btn btn-secondary" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.4);">📄 Descargar PDF (próximamente)</a>
   </div>
 </section>
 
 <section class="creator-section" id="creadora">
-  <div class="eyebrow">Quién lo creó</div>
-  <h2>La mente detrás de Vulvástica</h2>
+  <div class="eyebrow">Quién está detrás</div>
+  <h2>Sobre María Cantón</h2>
   <div class="creator-card">
     <div class="img-placeholder creator-photo" style="border-radius:50%;">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:32px;height:32px;"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0116 0v1"/></svg>
@@ -89,7 +220,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="creator-text">
       <h3>María Cantón</h3>
       <div class="creator-role">Educadora sexual · Creadora de Vulvástica</div>
-      <p>María es educadora sexual y creó <strong>Vulva a la Vista</strong> para llevar la educación menstrual a espacios cotidianos, con un lenguaje directo y sin vergüenza.</p>
+      <p>María es educadora sexual y creó <strong>Vulvástica</strong> para llevar la educación menstrual a espacios cotidianos, con un lenguaje directo y sin vergüenza — a través de talleres, materiales y el juego Vulva a la Vista.</p>
       <div class="placeholder">
         <span class="placeholder-tag">Completar</span>
         <p style="font-size:0.85rem;color:#6B5480;margin:0;">Espacio para una bio más completa de María: formación, experiencia y trayectoria como educadora sexual.</p>
@@ -101,39 +232,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </div>
 </section>
 
-<section id="instructivo">
-  <div class="eyebrow">Cómo se juega</div>
-  <h2>Instructivo del juego</h2>
-  <div class="instructivo-card">
-    <div>
-      <h3>Descarga el instructivo completo</h3>
-      <p>Reglas, montaje y dinámicas de juego explicadas paso a paso.</p>
-    </div>
-    <a href="#" class="btn btn-secondary" style="background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.4);">📄 Descargar PDF (próximamente)</a>
-  </div>
-</section>
-
-<section id="comprar">
-  <div class="buy-section">
-    <div class="eyebrow" style="color:var(--gold);">Consíguelo</div>
-    <h2 style="color:white;">Lleva Vulva a la Vista a tu casa</h2>
-    <div class="price-tag">$800 <span>MXN</span></div>
-    <p style="color:#E4CFEC;max-width:420px;margin:0 auto;">Envío a domicilio en todo México. Precio sujeto a confirmación final.</p>
-    <a href="#" class="btn btn-primary" id="stripe-buy-btn">Comprar con tarjeta</a>
-    <div class="placeholder">
-      <span class="placeholder-tag">Pendiente</span>
-      <p>Aquí se conecta el botón de pago real de Stripe (Payment Link). Se genera desde tu cuenta de Stripe y se reemplaza el href de este botón — no requiere programar nada más.</p>
-    </div>
-  </div>
-</section>
-
 <footer>
   <div class="brand">Vulvástica</div>
-  <p>Educación menstrual, un juego a la vez.</p>
+  <p>Educación menstrual, un espacio a la vez.</p>
   <div class="foot-links">
     <a href="https://instagram.com/vulvastica_" target="_blank" rel="noopener">Instagram</a>
-    <a href="#comprar">Comprar</a>
-    <a href="#instructivo">Instructivo</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#tienda">Tienda</a>
   </div>
   <p style="margin-top:1rem;opacity:0.6;">© 2026 Vulvástica · Todos los derechos reservados</p>
 </footer>

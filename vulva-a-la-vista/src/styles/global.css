@@ -388,10 +388,181 @@ footer .foot-links{
 footer .foot-links a{color:#E4CFEC;}
 footer .foot-links a:hover{color:var(--pink);}
 
+/* SERVICIOS */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+  gap:1.4rem;
+  margin-top:1.5rem;
+}
+.service-card{
+  background:white;
+  border-radius:20px;
+  padding:1.8rem;
+  box-shadow:0 6px 20px rgba(107,63,160,0.08);
+  border:1px solid rgba(155,111,201,0.15);
+  transition:transform .2s, box-shadow .2s;
+}
+.service-card:hover{transform:translateY(-4px); box-shadow:0 12px 28px rgba(107,63,160,0.14);}
+.service-card .icon{
+  width:46px;height:46px;
+  background:linear-gradient(135deg, var(--pink-soft), var(--purple-light));
+  border-radius:14px;
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:1rem;
+  font-size:1.4rem;
+}
+.service-card h3{
+  font-size:1.1rem;
+  margin-bottom:0.5rem;
+  color:var(--deep);
+  font-weight:600;
+}
+.service-card p{
+  font-size:0.92rem;
+  color:#6B5480;
+  margin-bottom:0.9rem;
+}
+.service-card .placeholder{margin-top:0.8rem;padding:0.8rem 1rem;}
+.service-card .placeholder p{font-size:0.8rem;margin:0;}
+
+/* EVENTOS */
+.events-columns{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2.5rem;
+  margin-top:2rem;
+}
+.events-col h3{
+  font-size:1.05rem;
+  color:var(--purple);
+  font-weight:600;
+  margin-bottom:1rem;
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+}
+.event-card{
+  background:white;
+  border-radius:18px;
+  padding:1.3rem 1.4rem;
+  box-shadow:0 6px 18px rgba(107,63,160,0.08);
+  border:1px solid rgba(155,111,201,0.15);
+  margin-bottom:1rem;
+}
+.event-card.past{opacity:0.75;}
+.event-date{
+  display:inline-block;
+  font-size:0.75rem;
+  font-weight:600;
+  color:white;
+  background:var(--pink);
+  padding:3px 10px;
+  border-radius:20px;
+  margin-bottom:0.6rem;
+}
+.event-card.past .event-date{background:var(--purple-light);}
+.event-card h4{
+  font-size:1rem;
+  color:var(--deep);
+  font-weight:600;
+  margin-bottom:0.3rem;
+}
+.event-card p{
+  font-size:0.87rem;
+  color:#6B5480;
+}
+
+/* TIENDA */
+.store-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:1.5rem;
+  margin-top:1.5rem;
+}
+.product-card{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 6px 20px rgba(107,63,160,0.08);
+  border:1px solid rgba(155,111,201,0.15);
+  display:flex;
+  flex-direction:column;
+}
+.product-image{
+  aspect-ratio:1/1;
+  background:linear-gradient(135deg, rgba(155,111,201,0.14), rgba(232,72,156,0.12));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--purple);
+  font-size:2.2rem;
+  position:relative;
+}
+.product-badge{
+  position:absolute;
+  top:12px;
+  left:12px;
+  background:var(--ink);
+  color:white;
+  font-size:0.68rem;
+  font-weight:600;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  padding:3px 10px;
+  border-radius:20px;
+}
+.product-badge.fisico{background:var(--pink);}
+.product-body{
+  padding:1.3rem 1.4rem 1.5rem;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.product-body h3{
+  font-size:1.02rem;
+  color:var(--deep);
+  font-weight:600;
+  margin-bottom:0.4rem;
+}
+.product-body p{
+  font-size:0.88rem;
+  color:#6B5480;
+  margin-bottom:1rem;
+  flex:1;
+}
+.product-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0.8rem;
+}
+.product-price{
+  font-family:'Fredoka',sans-serif;
+  font-weight:600;
+  color:var(--deep);
+  font-size:1.1rem;
+}
+.product-buy{
+  background:var(--pink);
+  color:white;
+  padding:0.5rem 1.1rem;
+  border-radius:22px;
+  font-weight:600;
+  font-size:0.85rem;
+  transition:background .2s, transform .2s;
+  white-space:nowrap;
+}
+.product-buy:hover{background:#d13a8a; transform:translateY(-2px);}
+.store-grid .placeholder{
+  grid-column:1 / -1;
+}
+
 @media(max-width:768px){
   .nav-links{display:none;}
   .about-grid{grid-template-columns:1fr;}
   .creator-card{flex-direction:column;text-align:center;}
   .instructivo-card{flex-direction:column;text-align:center;}
+  .events-columns{grid-template-columns:1fr;gap:1.5rem;}
   section{padding:3.5rem 6%;}
 }
