@@ -109,7 +109,7 @@ nav{
 .hero{
   position:relative;
   background:radial-gradient(ellipse at 50% -10%, var(--deep-2) 0%, var(--deep) 55%, #1A0730 100%);
-  padding:5.5rem 6% 7rem;
+  padding:4.5rem 6% 3rem;
   text-align:center;
   overflow:hidden;
 }
@@ -203,7 +203,7 @@ nav{
 }
 
 section{
-  padding:5rem 6%;
+  padding:3rem 6%;
   max-width:1080px;
   margin:0 auto;
 }
@@ -579,7 +579,8 @@ footer .foot-links a:hover{color:var(--pink);}
   .creator-card{flex-direction:column;text-align:center;align-items:center;}
   .instructivo-card{flex-direction:column;text-align:center;}
   .events-columns{grid-template-columns:1fr;gap:1.5rem;}
-  section{padding:3.5rem 6%;}
+  section{padding:2.25rem 6%;}
   .creator-photo{width:200px;}
   .creator-photo img{height:240px;}
+  .product-image{aspect-ratio:16/9;}
 }
