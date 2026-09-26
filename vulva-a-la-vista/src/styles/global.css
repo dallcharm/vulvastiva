@@ -576,7 +576,7 @@ footer .foot-links a:hover{color:var(--pink);}
 @media(max-width:768px){
   .nav-links{display:none;}
   .about-grid{grid-template-columns:1fr;}
-  .creator-card{flex-direction:column;text-align:center;}
+  .creator-card{flex-direction:column;text-align:center;align-items:center;}
   .instructivo-card{flex-direction:column;text-align:center;}
   .events-columns{grid-template-columns:1fr;gap:1.5rem;}
   section{padding:3.5rem 6%;}
