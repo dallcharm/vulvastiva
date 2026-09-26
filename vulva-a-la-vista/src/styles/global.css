@@ -287,7 +287,7 @@ h2{
 .creator-card{
   display:flex;
   gap:2.5rem;
-  align-items:center;
+  align-items:flex-start;
   background:white;
   border-radius:28px;
   padding:2.5rem;
@@ -295,8 +295,17 @@ h2{
 }
 .creator-photo{
   flex-shrink:0;
-  width:170px;
-  height:170px;
+  width:260px;
+}
+.creator-photo img{
+  display:block;
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  object-position:center top;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(107,63,160,0.2);
+  border:4px solid white;
 }
 .creator-text h3{
   font-size:1.4rem;
@@ -557,6 +566,12 @@ footer .foot-links a:hover{color:var(--pink);}
 .store-grid .placeholder{
   grid-column:1 / -1;
 }
+.store-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:inherit;
+}
 
 @media(max-width:768px){
   .nav-links{display:none;}
@@ -565,4 +580,6 @@ footer .foot-links a:hover{color:var(--pink);}
   .instructivo-card{flex-direction:column;text-align:center;}
   .events-columns{grid-template-columns:1fr;gap:1.5rem;}
   section{padding:3.5rem 6%;}
+  .creator-photo{width:200px;}
+  .creator-photo img{height:240px;}
 }
