@@ -109,7 +109,7 @@ nav{
 .hero{
   position:relative;
   background:radial-gradient(ellipse at 50% -10%, var(--deep-2) 0%, var(--deep) 55%, #1A0730 100%);
-  padding:4.5rem 6% 3rem;
+  padding:5.5rem 6% 3rem;
   text-align:center;
   overflow:hidden;
 }
@@ -203,7 +203,7 @@ nav{
 }
 
 section{
-  padding:3rem 6%;
+  padding:2rem 6%;
   max-width:1080px;
   margin:0 auto;
 }
@@ -296,16 +296,6 @@ h2{
 .creator-photo{
   flex-shrink:0;
   width:260px;
-}
-.creator-photo img{
-  display:block;
-  width:100%;
-  height:320px;
-  object-fit:cover;
-  object-position:center top;
-  border-radius:20px;
-  box-shadow:0 10px 30px rgba(107,63,160,0.2);
-  border:4px solid white;
 }
 .creator-text h3{
   font-size:1.4rem;
@@ -572,15 +562,29 @@ footer .foot-links a:hover{color:var(--pink);}
   object-fit:cover;
   border-radius:inherit;
 }
+.creator-photo{
+  flex-shrink:0;
+  width:260px;
+  align-self:center;
+}
+.creator-photo img{
+  display:block;
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  object-position:center top;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(107,63,160,0.2);
+  border:4px solid white;
+}
 
 @media(max-width:768px){
   .nav-links{display:none;}
   .about-grid{grid-template-columns:1fr;}
-  .creator-card{flex-direction:column;text-align:center;align-items:center;}
+  .creator-card{flex-direction:column;text-align:center;}
   .instructivo-card{flex-direction:column;text-align:center;}
   .events-columns{grid-template-columns:1fr;gap:1.5rem;}
-  section{padding:2.25rem 6%;}
+  section{padding:2rem 6%;}
   .creator-photo{width:200px;}
   .creator-photo img{height:240px;}
-  .product-image{aspect-ratio:16/9;}
 }
